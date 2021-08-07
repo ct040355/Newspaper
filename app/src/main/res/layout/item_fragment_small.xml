@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="129.5dp"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_google"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:textSize="18.dp"
+
+                android:textColor="@color/black"
+                android:text="Siêu thị thực phẩm đồng giá bình ổn xuất hiện ở Sài Gòn" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+
+                android:text="Sun, 18 Jul 2021 20:46"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="#BFB9B9"
+        />
+
+</LinearLayout>

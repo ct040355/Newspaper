@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="129.5dp"
+        >
+        <ImageView
+            android:id="@+id/img_recentNews"
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_google"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitleRecent"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:textSize="18.dp"
+                android:textColor="@color/black"
+                android:text="Siêu thị thực phẩm đồng giá bình ổn xuất hiện ở Sài Gòn" />
+
+            <TextView
+                android:id="@+id/tvDeleteRecent"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="right|top"
+                android:text="x "
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="#BFB9B9"
+        />
+
+</LinearLayout>

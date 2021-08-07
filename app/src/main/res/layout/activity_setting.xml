@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/img_backSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00FFFFFF"
+            android:backgroundTintMode="src_atop"
+
+            android:src="@drawable/ic_back2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profilepic"
+                android:layout_width="101dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_user"
+                app:civ_border_color="#F4F3F3"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="\"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_signInSetting"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/cam"
+                android:text="Đăng nhập"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_SaveNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_save"
+        android:text="    Tin đã lưu"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/btn_ReadRecentNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    Tin đọc gần đây"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_clock"
+        android:textSize="20dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_bigMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_list"
+        android:text="    Chế độ danh sách to             "
+        android:textSize="20dp"
+        app:switchMinWidth="50dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_darkMode"
+        android:text="    Chế độ ban đêm                    "
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_darkmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:switchMinWidth="50dp"/>
+
+    <TextView
+        android:id="@+id/btn_Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    Đăng xuất"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_logout"
+        android:textSize="20dp"/>
+
+</LinearLayout>
